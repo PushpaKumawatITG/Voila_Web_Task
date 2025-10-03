@@ -1,0 +1,448 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    position: relative;
+}
+.anouncement-bar {
+    width: 100%;
+    background-color: #f5fcf8;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Poppins','cabinet Grotesk';
+    font-weight: 600;
+    color: #53565a;
+}
+.anouncement-bardiv {
+    width: 80%;
+    margin: auto;
+}
+.anouncement-bar p {
+    text-align: center;
+    padding: 0.64rem 0 0.8rem 0;
+    font-size: 13px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+#maindiv{
+    padding-top: 30px;
+    position: sticky;
+    width: calc(100% - 34px);
+    margin: 0 auto;
+    top: 5px;
+    z-index: 10;
+}
+.displayNone{
+    display: none;
+}
+header {
+    width: 98%;
+    margin: auto;
+}
+#head {
+    width: 100%;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 5px 15px 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.icons {
+    width: 100%;
+    height: 100%;
+}
+.header-icons {
+    width: 140px;
+    padding: 6px 0 0 0;
+    margin: 0 0 0 10px;
+    gap: 15px;
+}
+.display{
+    display: flex;
+}
+.alignItems{
+    align-items: center;
+}
+.border-div {
+    width: 64px;
+    height: 24px;
+    padding: 0 12px 0 0;
+    display: inline-block;
+    border-right: 1px solid rgba(84, 98, 116, 0.4);
+}
+.border-div:last-child {
+    border-right: none;
+    padding-right: 8px;
+}
+.Pageslinks {
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.Pageslinks li{
+    font-family: 'Poppins',sans-serif;
+}
+#shopdropdown{
+    margin: 0 0 0 12px;
+}
+.navbar {
+    justify-content: center;
+}
+.navdiv {
+    justify-content: center;
+    padding-top: 5px;
+}
+.links {
+    color: #56697f;
+    font-weight: 600;
+    font-size: 15.9px;
+    letter-spacing: 0.5px;
+}
+.headbox {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 25px;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+}
+.videodiv{
+    max-height: 840px;
+    height: 100%;
+}
+.position{
+    position: relative;
+}
+.height{
+    height: 800px;
+}
+.button_anchor{
+    width: 130px;
+    height: 130px;
+    border: none;
+    font-weight: 400;
+    line-height: 1.2;
+    border-radius: 1000px;
+    justify-content: center;
+    font-family: 'Poppins','Cabinet Grotesk';
+}
+.BG-Color{
+    background-color: #435870;
+    color: #eeeeee;
+}
+.fontSize{
+    font-size: 16px;
+}
+.list{
+    list-style: none;
+}
+.dropdown-page {
+    visibility: hidden;
+    opacity: 0;
+    width: 98%;
+    height: 440px;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    background-color: white;
+    list-style: none;
+    padding: 20px 0;
+    min-width: 150px;
+    overflow-y: scroll;
+    transform: translateY(-30px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 100;
+}
+.dropdown-page > ul{
+    margin: 20px;
+}
+.anchor_li{
+    display: block;
+    padding: .6rem 0 .6rem 3rem;
+    word-wrap: break-word;
+}
+.anchor_li > a{
+    color: #56697f;
+    opacity: 1;
+}
+.mainimgli{
+    margin-left: 30px;
+}
+.imgdiv{
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    width: 25%;
+    height: 92%;
+}
+.imgdiv h4{
+    color: #56697f;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.imgdiv:last-child{
+    padding: 20px 20px 20px 10px;
+}
+.img{
+    width: 100%;
+    height: 98%;
+    border: none;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 100;
+}
+.dropdown-menu li{
+    padding: 0 12px;
+}
+.listhover{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+.arrow-icon{
+    transform: translate(2px,3px);
+}
+.dropdown-menu li a, .dropdown-page > .list > li>a{
+    display: block;
+    padding: 8px 20px;
+    color: #56697f;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'cabinet Grotesk', sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.dropdown-menu li a:hover, .listhover:hover{
+    background-color: #eeeeee;
+    color: #333;
+}
+.dropdown:hover, #shopdropdown:hover{
+    text-decoration: 2px solid rgb(100, 137, 161) underline;
+}
+.dropdown:hover .arrow-icon, #shopdropdown:hover .arrow-icon{
+    transform: rotate(180deg) translate(-2px,-3px);
+    transition: transform 0.1s ease;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+}
+#shopdropdown:hover > .dropdown-page{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
+.btn_getPouch{
+    width: 100%;
+    max-width: 88%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 138px;
+    left: 110px;
+}
+.btn_getPouch h2{
+    max-width: 790px;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    font-weight: 550;
+    font-family: 'Poppins','cabinet Grotesk';
+    color: #ffffff;
+}
+.input-with-button {
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.input-with-button input {
+    width: 100%;
+    padding: 10px 30px; 
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.input-with-button input:focus{
+    border: 2px solid grey;
+}
+.input-with-button button {
+    position: absolute;
+    right: 0;
+    top: 26px;
+    height: 30px;
+    width: 40px;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    background: transparent;
+    cursor: pointer;
+    color: #56697f;
+    font-weight: bold;
+}
+#searchbar{
+    padding: 18px auto 10px auto;
+    position: sticky;
+    width: calc(100% - 60px);
+    margin: -84px auto 0 auto;
+    top: 30px;
+    z-index: 10;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+.searchdiv{
+    width: 98%;
+    margin: auto;
+    justify-content: center;
+    background-color: white;
+}
+.crossdiv{
+    margin-left: 10px;
+}
+.crossdiv button{
+    color: #56697f;
+    border: none;
+    background: transparent;
+}
+ #MenuBar{
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    max-width: 500px;
+    width: 100%;
+}
+.menu-items{
+    flex-direction: column;
+}
+/* Scrollbar ka width aur background */
+#MenuBar::-webkit-scrollbar {
+    width: 10px;
+    height: 8px; /* horizontal scrollbar ke liye */
+}
+/* Scrollbar track (background) */
+#MenuBar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+/* Scrollbar thumb (jo move hota hai) */
+#MenuBar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+/* Hover effect on thumb */
+#MenuBar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+@media(max-width:390px){
+    .headbox{
+        margin-left: 40px;
+        margin-right: 0;
+    }
+    .header-icons{
+        width: 100px;
+        margin-left: 25px;
+    }
+    .border-div{
+        width: 20px;
+        padding-right: 10px;
+    }
+}
+@media (max-width:800px){
+    #maindiv{
+        width: calc(100% - 16px);
+    }
+    .headbox>div>a>img{
+        height: 32px !important;
+    }
+    .header-icons{
+        width: 130px;
+        margin-left: 25px;
+    }
+    .header-icons:last-child{
+        margin-right: 0;
+    }
+    #searchbar{
+        width: calc(100% - 18px);
+        padding-bottom: 0;
+    }
+    .searchdiv{
+        width: 96%;
+    }
+    .videodiv{
+        height: 462px;
+    }
+    .btn_getPouch h2{
+        max-width: 794px;
+        font-size: 24px;
+        letter-spacing: normal;
+        order: 1;
+        font-weight: 600;
+    }
+    .btn_getPouch{
+        bottom: 40px;
+        flex-direction: column;
+        left: 20px;
+    }
+    .button_anchor{
+        width: 182px;
+        height: 60px;
+        margin-bottom: 33px;
+        line-height: 1.2;
+    }
+    .button_anchor a{
+        font-size: 12px;
+        margin-top: 2px;
+        opacity: 1;
+    }
+}
+@media(max-width: 1024px){
+    .headbox{
+        justify-content: space-between;
+    }
+    .navdiv > * {
+        position: relative;
+        order: -1;
+        display: none;
+    }
+    .navdiv::before{
+        content: '\2630'; 
+        font-family: Arial, sans-serif;
+        position: absolute;
+        top: 45px;
+        left: 20px;
+        font-size: 30px;
+        color: black;
+    }
+    .headbox{
+        margin-left: 50px;
+        margin-right: 0;
+    }
+}
