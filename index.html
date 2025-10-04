@@ -159,7 +159,7 @@
                         <div class="border-div">
                             <a href="#">
                                 <span>
-                                    <span class="icons">
+                                    <span class="icons" id="addCartbtn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
                                             color="var(--token-a84689ca-fde2-4e43-a612-bf54685e150b, rgb(67, 87, 111))"
                                             style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-a84689ca-fde2-4e43-a612-bf54685e150b, rgb(67, 87, 111)); color: var(--token-a84689ca-fde2-4e43-a612-bf54685e150b, rgb(67, 87, 111)); flex-shrink: 0;">
@@ -182,7 +182,7 @@
     </div>
 
     <div id="searchbar" class="displayNone">
-        <div class="display searchdiv"> 
+        <div class="display searchdiv">
             <div class="input-with-button">
                 <input type="search" placeholder="Search">
                 <button>
@@ -238,6 +238,25 @@
             <div class="button_anchor alignItems display BG-Color">
                 <a href="#" class="BG-Color">Get Yours</a>
             </div>
+        </div>
+    </div>
+    <div class="displayNone" id="cartPage">
+        <h2>
+            <span id="crossCart">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon icon-close" viewBox="0 0 18 17"
+                    data-acsb-hidden="true" role="presentation" width="20px">
+                    <path fill="currentColor"
+                        d="M.865 15.978a.5.5 0 0 0 .707.707l7.433-7.431 7.579 7.282a.501.501 0 0 0 .846-.37.5.5 0 0 0-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 1 0-.707-.708L8.991 7.853 1.413.573a.5.5 0 1 0-.693.72l7.563 7.268z">
+                    </path>
+                </svg>
+            </span>
+        </h2>
+        <div class="display alignItems CartItems">
+            <h2>YOUR CART IS EMPTY</h2>
+            <button>Continue Shopping</button>
+            <h4>Have an account?</h4>
+            <p><a href="#">Log in</a></p>
+            <p>to check out faster.</p>
         </div>
     </div>
     <div style="height: 1000px;"></div>

@@ -284,10 +284,14 @@ video {
     width: 100%;
     padding: 14px 30px; 
     border: 2px solid grey;
+    background-color: #f5fcf8;
     outline: none;
     border-radius: 7px;
     box-sizing: border-box;
     font-size: 16px;
+}
+.input-with-button input:focus{
+    background-color: transparent;
 }
 .input-with-button button {
     position: absolute;
@@ -356,6 +360,64 @@ video {
 .menu-items p:hover{
     background-color: rgba(84, 98, 116, 0.1);
     width: 260%;
+}
+#cartPage{
+    width: 400px;
+    background-color: #f5fcf8;
+    height: 100vh;
+    z-index: 10;
+    box-shadow: 0 0 5px 0px grey;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    opacity: 0;
+    transition: opacity 2s ease;
+    transform: translateX(-50px);
+}
+#cartPage > h2{
+    width: 93%;
+    height: 20px;
+    padding: 20px 17px 20px 10px;
+    color: #56697f;
+    text-align: right;
+}
+.CartItems{
+    height: 400px;
+    justify-content: center;
+    font-family: 'poppins';
+    gap: 10px;
+    color: #53565a;
+    flex-direction: column;
+}
+.CartItems > button{
+    padding: 17px 35px;
+    font-size: 17px;
+    border: none;
+    margin-left: 15px;
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+    background-color: #435870;
+    color: white;
+}
+.CartItems > h2{
+    opacity: 1;
+    font-weight: 600;
+    letter-spacing: 1.2;
+    font-size: 25px;
+    margin: 42px 0 20px 12px;
+}
+.CartItems > h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 15px;
+    text-align: center;
+}
+.CartItems > p{
+    color: #9295a6;
+    font-size: 16px;
 }
 @media(max-width:390px){
     .headbox{
