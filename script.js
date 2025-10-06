@@ -30,12 +30,12 @@ if(window.innerWidth >= 1024){
         cartPage.classList.remove("displayNone");
         cartPage.classList.add("display");
         cartPage.style.opacity = '1';
-        // document.body.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
     });
     crossCart.addEventListener('click',() => {
         cartPage.classList.add("displayNone");
         cartPage.classList.remove("display");
-        // document.body.style.overflow = "auto";
+        document.body.style.overflow = "auto";
     });
 }
 
