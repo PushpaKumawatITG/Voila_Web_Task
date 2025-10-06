@@ -6,15 +6,19 @@ const menuToggle = document.getElementById("menuToggle");
 const addCartbtn = document.getElementById("addCartbtn");
 const cartPage = document.getElementById("cartPage");
 const crossCart = document.getElementById("crossCart");
+const ContactDiv = document.getElementById("Contact");
+const BlueDiv = document.querySelector(".BlueDiv");
 
 searchbtn.addEventListener("click", (e) => {
     e.stopPropagation();
     searchbar.classList.remove("displayNone");
+    BlueDiv.classList.remove("displayNone");
     document.body.style.overflow = "hidden";
 });
 crosssearchbarbtn.addEventListener("click", (e) => {
     e.stopPropagation();
     searchbar.classList.add("displayNone");
+    BlueDiv.classList.remove("displayNone");
     document.body.style.overflow = "auto";
 });
 document.addEventListener("click", () => {
@@ -31,11 +35,13 @@ if(window.innerWidth >= 1024){
         cartPage.classList.add("display");
         cartPage.style.opacity = '1';
         document.body.style.overflow = "hidden";
+        ContactDiv.style.filter = 'brightness(0.8)';
     });
     crossCart.addEventListener('click',() => {
         cartPage.classList.add("displayNone");
         cartPage.classList.remove("display");
         document.body.style.overflow = "auto";
+        ContactDiv.style.filter = 'none';
     });
 }
 

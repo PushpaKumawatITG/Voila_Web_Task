@@ -30,7 +30,7 @@ body {
     opacity: 1;
 }
 #maindiv{
-    padding-top: 30px;
+    padding-top: 26px;
     position: sticky;
     width: calc(100% - 34px);
     margin: 0 auto;
@@ -423,6 +423,13 @@ video {
     letter-spacing: 0.9px;
     margin-left: 14px;
     font-size: 16px;
+}
+.BlueDiv{
+    height: 100vh;
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    background-color: rgba(84, 98, 116, 0.8);
 }
 .a_para{
     border-bottom: 1px solid #535664;
