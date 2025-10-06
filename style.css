@@ -348,11 +348,13 @@ video {
     background-color: white;
     position: absolute;
     top: 152px;
-    left: 13px;
+    left: 0;
     max-width: 500px;
     padding: 3px;
     width: 92%;
     z-index: 10;
+    transition: transform 2s ease;
+    transform: translateX(13px);
 }
 .menu-items{
     flex-direction: column;
@@ -395,6 +397,7 @@ video {
     font-size: 17px;
     border: none;
     margin-left: 15px;
+    margin-bottom: 15px;
     letter-spacing: 0.7px;
     border-radius: 5px;
     background-color: #435870;
@@ -403,21 +406,27 @@ video {
 .CartItems > h2{
     opacity: 1;
     font-weight: 600;
-    letter-spacing: 1.2;
+    letter-spacing: 1.1px;
     font-size: 25px;
     margin: 42px 0 20px 12px;
 }
 .CartItems > h4{
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 18px;
     font-weight: 600;
     padding-left: 15px;
     text-align: center;
 }
 .CartItems > p{
-    color: #9295a6;
+    color: #535664;
+    letter-spacing: 0.9px;
+    margin-left: 14px;
     font-size: 16px;
+}
+.a_para{
+    border-bottom: 1px solid #535664;
+    color: #535664;
 }
 @media(max-width:390px){
     .headbox{
@@ -499,5 +508,14 @@ video {
     .headbox{
         margin-left: 50px;
         margin-right: 0;
+    }
+}
+@media(min-width:1400px){
+    .btn_getPouch h2{
+        font-size: 72px;
+    }
+    .btn_getPouch{
+        width: 90%;
+        bottom: 60px;
     }
 }
